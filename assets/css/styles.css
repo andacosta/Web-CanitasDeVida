@@ -1,0 +1,295 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; 
+  padding-bottom: 40px;
+  /*color: #5a5a5a;*/
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.glyphicon-picture {
+  font-size: 23px;
+  padding-right: 10px;
+}
+.my-icon {
+  font-size: 14px;
+  color: green;
+  padding-right: 10px;
+}
+.navbar, .navbar-default {
+  background-color: white;
+}
+.navbar-brand {
+  /*padding-top: 18px;*/
+  font-size: 30px;
+}
+.navbar-header {
+  padding-top: 8px;
+}
+.navbar-default {
+  position: absolute;
+}
+.navbar-default .navbar-brand {
+  color: #265A16;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-default {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  /* padding-right: 15px;
+  padding-left: 15px; */
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.sub-title {
+  font-size: 15px;
+  /*color: #1567AF;*/
+  color: gray;
+  /*list-style-position: inside;*/
+  position: relative;
+  /*top: 30px;*/
+  bottom: 15px;
+  left: 5px;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+  background-color: #FFF;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  min-height: 100%;
+  /*bottom: auto;
+  visibility: visible;*/
+}
+.carousel-caption {
+  /*color: black;*/
+}
+.hidden {
+  display: none;
+}
+img .blur {
+  filter: blur(20px) !important;
+}
+
+
+
+/* CUSTOMIZE THE MAP
+-------------------------------------------------- */
+
+.map {
+  height: 400px;
+  margin: 0px;
+  padding: 0px
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.my-heading {
+  font-size: 30px;
+  padding-top: 10px;
+}
+.services-heading {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.req-heading {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px; 
+}
+.my-table {
+  /*border-spacing: 5px;*/
+  /*caption-side: top;*/
+  border-style: none;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 480px) {
+  body .hidden-movil {
+    display: none!important;
+  }
+}
+
+@media (max-width: 768px) {
+  body .sub-title {
+    display: none!important;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    /* margin-top: 20px; */
+  }
+  .navbar-wrapper .container {
+    /* padding-right: 15px;
+    padding-left: 15px; */
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    /* border-radius: 4px; */
+  }
+  .navbar-collapse {
+    padding-top: 24px;
+  }
+  .navbar-brand {
+    padding-top: 20px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .carousel .item {
+    height: 500px;
+  }
+  .map {
+    height: 500px;
+  }
+  .lead {
+    font-size: 16px;
+  }
+  .services-heading {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .glyphicon-picture {
+    font-size: 27px;
+    padding-right: 20px;
+  }
+  .navbar-brand {
+    padding-top: 22px;
+    margin-left: 60px;
+    font-size: 40px;
+  }
+  .navbar {
+    min-height: 75px;
+  }
+  .navbar-default {
+      /*padding-left: 90px;
+      padding-right: 90px;*/
+  }
+  .navbar-collapse {
+    padding-top: 27px;
+  }
+  .navbar-nav {
+    margin-right: 60px;
+  }
+  .sub-title {
+    font-size: 20px;
+    bottom: 13px;
+  }
+  .carousel .item {
+    height: 550px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+  .carousel .item {
+    height: 600px;
+  }
+}
+
+
+
+/* Retina Display */
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (  -o-min-device-pixel-ratio: 2/1),
+    only screen and (     min-device-pixel-ratio: 2),
+    only screen and (             min-resolution: 2dppx) {
+    
+    header #logo a {
+      background-image: url(../img/logo_@2x.png);
+      background-size: 96px 30px;
+    }
+    .menu-nav {
+      background-image: url(../img/menu-mobile_@2x.png);
+      background-size: 16px 32px;
+    }
+    .type-work {
+      background-image: url(../img/filter-icon_@2x.png);
+      background-size: 16px 16px;
+    }
+  }*/
